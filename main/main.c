@@ -65,7 +65,7 @@
      rtc_set_datetime(&t);
  
      while (true) {
-         int caracter = getchar_timeout_us(1000);
+         int caracter = alarm;
  
          if (caracter != PICO_ERROR_TIMEOUT) { 
              if (caracter == 's') {
