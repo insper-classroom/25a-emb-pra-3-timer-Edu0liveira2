@@ -14,7 +14,6 @@
  
  const int echo = 14;
  const int trig = 15;
- int start_flag = 1;
  volatile int timer_f = 0;
  
  volatile uint64_t start_time = 0; 
@@ -35,6 +34,7 @@
  }
  
  int main() {
+    int start_flag = 0;
      stdio_init_all(); 
      sleep_ms(2000); 
  
