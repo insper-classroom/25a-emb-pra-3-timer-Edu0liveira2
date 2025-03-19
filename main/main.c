@@ -14,7 +14,7 @@
  
  const int echo = 14;
  const int trig = 15;
- volatile int start_flag = 1;
+ int start_flag = 1;
  volatile int timer_f = 0;
  
  volatile uint64_t start_time = 0; 
